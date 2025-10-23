@@ -1,4 +1,4 @@
-# brain_tumour_detection
+# Brain Tumor Detection
 ## Overview 
 This project focuses on detecting brain tumors from MRI images using a deep learning approach implemented in TensorFlow. The model classifies MRI scans into tumor and non-tumor categories, assisting in early diagnosis and medical analysis. The solution is designed for academic and research purposes, demonstrating the use of convolutional neural networks (CNNs) in medical image classification.
 Model Architecture
