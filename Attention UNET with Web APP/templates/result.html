@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<h2>{{ prediction }}</h2>
+
+<p>
+Confidence:
+{{ confidence }} %
+</p>
+
+<p>
+Tumor Area:
+{{ tumor_area }} %
+</p>
+
+<p>
+Tumor Pixels:
+{{ tumor_pixels }}
+</p>
+
+<div class="images">
+
+<div>
+<h3>Original</h3>
+<img src="{{ url_for(
+'static',
+filename='uploads/' + image
+) }}">
+</div>
+
+<div>
+<h3>Mask</h3>
+<img src="{{ url_for(
+'static',
+filename='masks/' + mask
+) }}">
+</div>
+
+<div>
+<h3>Overlay</h3>
+<img src="{{ url_for(
+'static',
+filename='overlays/' + overlay
+) }}">
+</div>
+
+</div>
+
+<a href="/">
+Try Another Image
+</a>
+
+</div>
+
+</body>
+</html>
