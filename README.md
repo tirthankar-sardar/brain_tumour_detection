@@ -59,3 +59,32 @@ brain_tumour_detection/
 │── app.py
 │── requirements.txt
 │── README.md
+
+---
+
+## 📂 Project Structure for Attention UNET with Web App
+
+```bash
+brain_tumor_flask/
+│
+├── app.py
+├── model.py
+├── inference.py
+├── utils.py
+│
+├── static/
+│   ├── uploads/
+│   ├── masks/
+│   ├── overlays/
+│   └── css/
+│       └── style.css
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+├── weights/
+│   └── best_attunet.pth
+│
+├── requirements.txt
+└── README.md
